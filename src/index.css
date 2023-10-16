@@ -505,6 +505,9 @@ code {
     width: 26rem;
   }
   .loginUser{
-    margin-top: 100%;
+    margin-top: 90%;
+  }
+  .navlist{
+    margin-top: 2rem;
   }
 }
