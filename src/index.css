@@ -13,7 +13,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* height: 100vh; */
 }
 
 code {
@@ -34,9 +33,6 @@ code {
   grid-row: 1/-1;
   display: grid;
   grid-template-rows: 8rem 1fr 8rem;
-}
-.sidebar > * {
-  /* margin: 0 2.4rem; */
 }
 .sidebar .icon {
   display: flex;
@@ -170,19 +166,13 @@ code {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  /* min-width: 50%; */
   flex: 1 1 0;
-  /* height: 100%; */
-  /* overflow: hidden; */
-  /* width: 100%; */
   background-color: rgb(255, 255, 255);
   border-radius: 0.8rem;
 }
 .upper {
   display: flex;
   justify-content: space-between;
-  /* padding: 2rem 2rem 0.4rem 2rem; */
-  /* height: 100%; */
 }
 .heading {
   font-size: 1.7rem;
@@ -201,9 +191,6 @@ code {
   border-radius: 0.8rem;
   padding: 2rem 2rem 0 2rem;
 }
-/* .customers * {
-  border-radius: 50%;
-} */
 .cust-title {
   font-size: 1.8rem;
 }
@@ -234,51 +221,6 @@ code {
   font-size: 1.8rem;
 }
 
-/* .dropdown {
-  margin: 0 auto;
-  z-index: 10000;
-  width: 200px;
-  position: relative;
-}
-.dropdown,
-.dropdown * {
-  z-index: 10;
-}
-.dropdown .dropdown-btn {
-  cursor: pointer;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  color: #777;
-  font-weight: 500;
-}
-.dropdown-content {
-  position: absolute;
-  /* top: 110%; */
-/* left: 0;
-  width: 100%;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.07);
-} */
-/* .dropdown-content .item {
-  padding: 10px;
-  cursor: pointer;
-}
-.dropdown-content .item:hover {
-  background: #fcfcfc;
-}
-
-button {
-  z-index: -1;
-  display: block;
-  width: 300px;
-  margin: 0 auto;
-} */
-
 .drop-down {
   position: relative;
   width: 100px;
@@ -286,7 +228,6 @@ button {
 }
 .drop-down .dropdown-btn {
   cursor: pointer;
-  /* border: 1px solid #ddd; */
   border: none;
   display: flex;
   align-items: center;
@@ -318,8 +259,6 @@ button {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
-
-  /* overflow: hidden; */
 }
 .unit-bar {
   position: relative;
@@ -334,12 +273,8 @@ button {
   height: 100px;
 }
 .bar-chart {
-  /* background-color: yellow; */
   display: flex;
   justify-content: space-evenly;
-  /* gap: 1.5rem; */
-  /* overflow: hidden; */
-  /* flex-direction: column; */
 }
 .bar-hover {
   position: absolute;
@@ -465,9 +400,11 @@ button {
 }
 
 .absolute-sidebar {
-  position: absolute;
+  position: fixed;
   display: block !important;
-  z-index: 100;
+  z-index: 1000;
+  flex-direction: column;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -563,5 +500,11 @@ button {
   }
   .pi-chart span {
     font-size: 1.2rem;
+  }
+  .sidebar{
+    width: 26rem;
+  }
+  .loginUser{
+    margin-top: 100%;
   }
 }
